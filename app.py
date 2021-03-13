@@ -25,8 +25,5 @@ def create_app():
         return jsonify({"nome": response})
     return app
 
-
-if __name__ == "__main__":
-    app = create_app()
-    app.debug = True
-    app.run()
+app = create_app()
+app.debug = True
